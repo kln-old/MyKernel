@@ -2,9 +2,10 @@ MyKernel:
 ==========
 
 This is just a hobby kernel which i'm developing to better understand my knowledge of kernels, bootloaders and other operating system features.
-This is based on James kernel development tutorial, in addition to my own code and design. i'm currently donig this on an X86 machine.
+This is based on James kernel development tutorial, in addition to my own code and design. 
+The developemet is currently being performed out on an X86 machine in my free time.
 
-The testing is done using 'bochs' emulator [http://bochs.sourceforge.net/]
+The testing is done using 'bochs'[http://bochs.sourceforge.net/]
 
 
 How to use:
