@@ -76,8 +76,7 @@ MyKernel/: [root dir]
    |
    +----main.c :entry point of the kernel.contains the main routine called by boot.s
    |
-   +----monitor.c | .h :[experimental] old files containng the display routines. screen.c contains all the updated and additional code. 
-   |									just kept it incase i need it sometime later
+   +----monitor.c | .h :[experimental] old files containng the display routines. screen.c contains all the updated and additional code.just kept it incase i need it sometime later
    |
    +----newkdb.c : [experimental] started this to try out something new for the keyboard driver.
    |
