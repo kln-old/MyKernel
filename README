@@ -23,16 +23,6 @@ bootable usb!!
 ==============
 $ dd if=./floppy.img of=/dev/sdb	#where /dev/sdb is your usb drive. will get screwed up if not careful.
 
-Problems:
-==========
-1. 	If bios does not detect the usb as a bootable device, then you'l have to instruct the bios to treat the usb as a floppy, cause we are using the floppy image structure.
-	The exact steps to do this changes from one bios to another, but it should be easy to find out if you explore a bit.
-
-2.	If bochs does not load properly, then make sure that your bochsrc.txt file contains the appropriate path for the rom images. i'm using address=0x000000, if it doesnot
-	work for you, then try address=0xf00000. read the bochs manual to know more about bochs configuration.
-
-3. i'm using /mnt2 and /dev/loop0. make sure you have the same or make appropriate changes in bochsrc.txt, update_image.sh and run_bochs.sh
-
 
 Directory Structure:
 ====================
@@ -93,6 +83,16 @@ MyKernel/: [root dir]
    |
    +----winman.c | .h : [experimental] supposed to be the windows manager.
 
+
+Problems:
+==========
+1. 	If bios does not detect the usb as a bootable device, then you'l have to instruct the bios to treat the usb as a floppy, cause we are using the floppy image structure.
+	The exact steps to do this changes from one bios to another, but it should be easy to find out if you explore a bit.
+
+2.	If bochs does not load properly, then make sure that your bochsrc.txt file contains the appropriate path for the rom images. i'm using address=0x000000, if it doesnot
+	work for you, then try address=0xf00000. read the bochs manual to know more about bochs configuration.
+
+3. i'm using /mnt2 and /dev/loop0. make sure you have the same or make appropriate changes in bochsrc.txt, update_image.sh and run_bochs.sh
 
 
 
