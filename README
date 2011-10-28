@@ -43,7 +43,7 @@ MyKernel/: [root dir]
 +-----run_bochs.sh: a simple script that loads the floppy.img and starts bochs
 |
 +-----update_image.sh: a simple script that updates & creates the floppy.img from src/kernel binary.
-
+|
 +--src/: [contains all the source files]
    ====
    |
